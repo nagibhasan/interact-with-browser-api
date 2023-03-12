@@ -7,7 +7,6 @@ const addProduct = () => {
     quantityField.value='';
 
 
-    console.log(product, quantity);
     displayProduct(product, quantity);
     saveProductToLocalStorage(product, quantity);
 }
@@ -39,7 +38,6 @@ const displayProductsFromLocalStorage = () => {
     const savedCart = getstoredShoppingCart();
     for(const product in savedCart){
         const quantity = savedCart[product];
-        console.log(product, quantity);
         displayProduct(product, quantity);
     }
 }
